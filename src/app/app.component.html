@@ -1,6 +1,17 @@
-<router-outlet></router-outlet>
+<nav>
+  <div class="nav-wrapper  teal lighten-2">
+    <a routerLink="" class="brand-logo right">Angular Rotas</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
